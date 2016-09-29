@@ -80,7 +80,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/ui/IMG_20160519_060930.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+  res.sendFile(path.join(__dirname, 'ui', 'IMG_20160519_060930.jpg'));
 });
 
 app.get('/ui/main.js', function (req, res) {
