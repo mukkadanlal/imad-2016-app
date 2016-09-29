@@ -2,7 +2,7 @@ console.log('Loaded!');
 /*var element = document.getElementById('lal');
 element.innerHTML="New value loaded while loading the document";*/
 var button = document.getElementById("counter");
-button.onclick = function(){
+button.onclick( function(){
     var request = new XMLHttpRequest();
     request.onreadystatechange = function (){
         if (request.readyState=== XMLHttpRequest.DONE){
@@ -15,4 +15,4 @@ button.onclick = function(){
     };
     request.open('GET','http://mukkadanlal.imad.hasura-app.io/counter',true);
     request.send();
-};
+});
