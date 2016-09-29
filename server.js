@@ -76,6 +76,7 @@ app.get('/counter',function(req,res){
    res.send(counter.toString());
 });
 
+var names=[];
 app.get('/submit-name',function(req,res){
     var name = req.query.name;
     names.push(name);
@@ -98,7 +99,7 @@ app.get('/ui/Sania.png', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-var names=[];
+
 
 
 
