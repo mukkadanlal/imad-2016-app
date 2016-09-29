@@ -16,11 +16,12 @@ button.onclick = function(){
         }
     };
 };
-var nameInput = document.getElementById("name");
-var name = nameInput.Value;
+
 var submit = document.getElementById("submit-btn");
 submit.onclick = function (){
-  var request = new XMLHttpRequest();
+    var request = new XMLHttpRequest();
+    var nameInput = document.getElementById("name");
+    var name = nameInput.Value;
     request.open('GET','http://mukkadanlal.imad.hasura-app.io/submit-name?name='+name,true);
     request.send();
     request.onreadystatechange = function (){
